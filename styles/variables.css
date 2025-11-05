@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Roboto+Mono:wght@100;400;700&display=swap');
+
+:root{
+  --main_txt_size: 11px;
+  --div: 230px;
+  
+  --transparent_black: rgba(0,0,0, 0.2);
+  --transparent_white: rgba(255,255,255, 0.5);
+}

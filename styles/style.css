@@ -1,0 +1,88 @@
+html{
+  background-color: black;
+  user-select: none;
+  border: none;
+}
+
+body {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  font-family: 'Roboto';
+  color: #525252;
+  text-decoration: none;
+  font-size: clamp(125px, 9vw, 150px);
+  font-weight: 400;
+}
+
+main{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+canvas{
+  max-width: min(100vw, calc(100vh * 16 / 9));
+  max-height: min(100vh, calc(100vw * 9 / 16));
+  border: #525252 1px solid;
+  box-sizing: border-box;
+}
+
+.allcaps{ text-transform: uppercase; }
+.grey{ color: #757575; }
+.darkgrey{ color: #525252; }
+input[type="radio"]{ display: none; }
+
+a, a:link, a:visited, a:active, a:focus{
+  color: #525252;
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+  width: fit-content;
+  
+}
+a:hover{
+  color: #757575;
+}
+
+
+#switch_container {
+  position: absolute;
+  top: 16px;
+  width: 100vw;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  z-index: 100;
+  font-size: 16px;
+  font-family: 'Roboto Mono';
+}
+
+#switch_container label {
+  color: white;
+  background-color: black;
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+#switch_container label:hover {
+  background-color: #333333;
+}
+
+#switch_container input[type="radio"]:checked + label {
+  background-color: white;
+  color: black;
+}
+
+
+input[type="radio"] {
+  display: none;
+}
